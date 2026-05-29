@@ -4,9 +4,18 @@
   "version": "1.0.0",
   "description": "Set every vendor toggle in cookie/consent preference dialogs to OFF (or ON) in one click. Idempotent: already-off stays off.",
   "homepage_url": "https://github.com/gauravkaushikcode/consent-toggle",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
   "action": {
     "default_title": "Consent Toggle",
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png"
+    }
   },
   "permissions": [
     "activeTab",
