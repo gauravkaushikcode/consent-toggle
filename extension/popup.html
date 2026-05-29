@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Consent Toggle</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Consent Toggle</h1>
+      <p class="hint">Open the site's cookie / vendor preferences dialog first, then pick a target state.</p>
+    </header>
+
+    <main>
+      <div class="actions">
+        <button id="btn-off" class="primary danger" type="button">
+          Set all <strong>OFF</strong>
+        </button>
+        <button id="btn-on" class="primary" type="button">
+          Set all <strong>ON</strong>
+        </button>
+      </div>
+
+      <section class="options">
+        <label>
+          <input type="checkbox" id="opt-dialog-only" checked />
+          Limit to visible dialog / modal
+        </label>
+        <label>
+          <input type="checkbox" id="opt-all-frames" checked />
+          Include iframes
+        </label>
+      </section>
+
+      <section id="result" class="result" aria-live="polite"></section>
+    </main>
+
+    <footer>
+      <span class="kbd-hint">Shortcuts: <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>O</kbd> / <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd></span>
+    </footer>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

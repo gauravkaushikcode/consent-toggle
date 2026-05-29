@@ -1,0 +1,26 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Packaged extension uploads for the Chrome Web Store
+*.zip
+dist/
+
+# Node (only if you ever add tooling)
+node_modules/
+npm-debug.log*
+
+# Secrets
+.env
+.env.*
+!.env.example

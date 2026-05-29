@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Consent Toggle",
+  "version": "1.0.0",
+  "description": "Set every vendor toggle in cookie/consent preference dialogs to OFF (or ON) in one click. Idempotent: already-off stays off.",
+  "homepage_url": "https://github.com/gauravkaushikcode/consent-toggle",
+  "action": {
+    "default_title": "Consent Toggle",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "commands": {
+    "set-all-off": {
+      "suggested_key": {
+        "default": "Alt+Shift+O"
+      },
+      "description": "Set all consent toggles to OFF on the active tab"
+    },
+    "set-all-on": {
+      "suggested_key": {
+        "default": "Alt+Shift+I"
+      },
+      "description": "Set all consent toggles to ON on the active tab"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
